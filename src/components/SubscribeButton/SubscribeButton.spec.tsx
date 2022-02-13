@@ -65,7 +65,9 @@ describe('SubscribeButton Component', () => {
             push: pushMock
         } as any)
 
-        const subscribeButton = screen.getByText('Subscribe now')
+        render(<SubscribeButton/>)
+
+        const subscribeButton = screen.getByText('Subscribe now');
 
         fireEvent.click(subscribeButton)
 
